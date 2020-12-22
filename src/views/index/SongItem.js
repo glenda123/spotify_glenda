@@ -11,7 +11,7 @@ class SongItem extends Component {
             <div className='SongItem'>
                 <Link to={'player/' + songId + tokenPath}>
                     <div className='SongItem-photo'>
-                        <img src={albumPhoto}/>
+                        <img src={albumPhoto} alt='Imagen'/>
                     </div>
                     <div className='SongItem-info'>
                         <h2>{songName}</h2>

@@ -30,7 +30,7 @@ class Player extends Component {
                     <div className='card'>
                         <div className='card-content Player-box'>
                             <div className='Player-left'>
-                                <img src={player.payload.album.images[0].url}/>
+                                <img src={player.payload.album.images[0].url} alt='album'/>
                             </div>
                             <div className='Player-right'>
                                 <audio controls>

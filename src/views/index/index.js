@@ -74,9 +74,9 @@ class Index extends Component {
                             onChange={(e) => {this.setState({song: e.target.value})}}
                             value={song}
                         />
-                        <a className='waves-effect waves-light btn green' onClick={(e) => this.props.search(song)}>
+                        <button className='waves-effect waves-light btn green' onClick={(e) => this.props.search(song)}>
                             <i className='fa fa-search'></i>
-                        </a>
+                        </button>
                         </div>
                         
                     </div>

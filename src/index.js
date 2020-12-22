@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-// import {createBrowserHistory} from 'history'
-import {createHistory} from 'history'
+ import {createBrowserHistory} from 'history'
+// import {createHistory} from 'history'
 import { routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 
@@ -12,7 +12,7 @@ import App from './App';
 import reducers from './reducers'
 import reportWebVitals from './reportWebVitals';
 
-const history = createHistory()
+const history = createBrowserHistory()
 const middleware = [routerMiddleware(history),thunk];
 
 const store = createStore(
